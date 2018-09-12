@@ -1,0 +1,198 @@
+@import 'config';
+@import 'menu';
+@import 'mobile';
+
+body{
+    background:$home-background;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto Slab', serif !important;
+    line-height: 1.5;
+    position: relative;
+    min-height: 100%;
+
+    .m-10{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .no-m{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .brandname{
+        position: absolute;
+        top: 30vh;
+        width: 70%;
+        height: 200px;
+        @include fadeIn;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .vh-holder{
+        position: absolute;
+        top: 20vh;
+        right: 20%;
+        z-index: -1;
+        margin-left: 20%;
+        border-radius: 5px;
+        background:rgba(248, 248, 248, 0.6);
+        @include fadeIn;
+        
+
+        .myinfo{ 
+            color: $primary-color;
+            padding: 15px;
+            font-weight: 400;
+            
+            span{
+                font-weight: 900;
+                color: $text-color;
+            }
+        }
+        
+    }
+
+    #about,#contactme {
+        z-index: -1;
+        .holder{
+            z-index: -1;
+            padding: 15px;
+            background-color: rgba($color: $primary-color, $alpha: 0.6);
+            border-radius: 5px;
+            color:$secondary-color;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            @include fadeIn;
+
+            .lg-header{
+                // color: $text-color;
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 15px;
+
+            }
+
+            .info {
+                ul{
+                    margin-top: 10px;
+                    display: inline-block;
+                    list-style: none;
+                    text-align: left;
+                    padding: 0;
+                }
+            }
+
+            .photoHolder{
+                z-index: -1;
+                text-align: center;
+                img{
+                    border-radius: 50%;
+                    height: 150px;
+                    border:2px solid $secondary-color;
+                }
+            }
+
+            .skill-star{
+                ul{
+                    display: inline-block;
+                    list-style: none;
+                    
+                    span{
+                        display: block;
+                        margin-left:10px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #contactme{
+        
+
+        h1{
+            text-align: center;
+            color: $primary-color;
+        }
+
+        .container{
+            background-color: rgba($color: $secondary-color, $alpha: 0.6);
+            border-radius: 5px;
+            color:$secondary-color;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 15px;
+            margin: auto;
+            @include fadeIn;
+
+            .holder{
+                padding:20px;
+                font-size: 2rem; 
+                text-align: center;
+
+            }
+        }
+    }
+
+    .jobInfo{
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+
+        span{
+            color: $text-color;
+            font-weight: 900;
+        }
+    }
+
+    .myproj{
+
+        div {
+            padding-bottom: 15px;
+            padding-top: 15px;
+
+            a{
+                display: block;
+                background-color:$primary-color ;
+                color: $secondary-color;
+                padding: 5px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .sticky{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    } 
+
+    footer{
+        width: 100%;
+        color: $secondary-color;
+        text-align: center;
+        padding: 5px;
+        z-index: 3;
+        background-color: $primary-color;
+        opacity: 0.5;
+   
+    }
+}
+

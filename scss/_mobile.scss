@@ -1,0 +1,36 @@
+@include mediaXlr{
+    .myinfo{
+        // background-color: green;
+    }
+}
+
+@include mediaXl{
+
+    .vh-holder{
+        // margin-left: 10%;
+        // top: 10vh;
+        
+        .myinfo{
+            // background-color: blue;
+        }
+    }
+    
+}
+
+@include mediaLg{
+    .myinfo{
+        // background-color: orange;
+    }
+}
+
+@include mediaMd{
+    .myinfo{
+        // background-color: pink;
+    }
+}
+
+@include mediaSm{
+    .myinfo{
+        // background-color: red;
+    }
+}
