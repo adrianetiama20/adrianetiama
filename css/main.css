@@ -205,7 +205,7 @@
   transition-delay: 0.4s; }
 
 body {
-  background: url("../img/bg2.jpg");
+  background: url("../img/opt-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
