@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 body{
     background:$home-background;
@@ -13,186 +12,561 @@ body{
     line-height: 1.5;
     position: relative;
     min-height: 100%;
+}
 
-    .m-10{
-        margin-top:20px;
-        margin-bottom: 20px;
+.m-10{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.no-m{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.brandname{
+    position: absolute;
+    top: 30vh;
+    width: 70%;
+    height: 200px;
+    @include fadeIn;
+
+    img{
+        width: 100%;
     }
+}
 
-    .no-m{
-        margin-left: 0;
-        margin-right: 0;
+.vh-holder{
+    position: absolute;
+    top: 20vh;
+    right: 20%;
+    z-index: -1;
+    margin-left: 20%;
+    border-radius: 5px;
+    background:rgba(248, 248, 248, 0.6);
+    @include fadeIn;
+    
+
+    .myinfo{ 
+        color: $primary-color;
+        padding: 15px;
+        font-weight: 400;
+        
+        span{
+            font-weight: 900;
+            color: $text-color;
+        }
     }
+    
+}
 
-    .brandname{
-        position: absolute;
-        top: 30vh;
-        width: 70%;
-        height: 200px;
+#about,#contactme {
+    z-index: -1;
+    .holder{
+        z-index: -1;
+        padding: 15px;
+        background-color: rgba($color: $primary-color, $alpha: 0.6);
+        border-radius: 5px;
+        color:$secondary-color;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 10px;
         @include fadeIn;
 
-        img{
-            width: 100%;
+        .lg-header{
+            // color: $text-color;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 15px;
+
         }
+
+        .info {
+            ul{
+                margin-top: 10px;
+                display: inline-block;
+                list-style: none;
+                text-align: left;
+                padding: 0;
+            }
+        }
+
+        .photoHolder{
+            z-index: -1;
+            text-align: center;
+            img{
+                border-radius: 50%;
+                height: 150px;
+                border:2px solid $secondary-color;
+            }
+        }
+
+        .skill-star{
+            ul{
+                display: inline-block;
+                list-style: none;
+                
+                span{
+                    display: block;
+                    margin-left:10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+#contactme{
+    
+
+    h1{
+        text-align: center;
+        color: $primary-color;
+    }
+
+    .container{
+        background-color: rgba($color: $secondary-color, $alpha: 0.6);
+        border-radius: 5px;
+        color:$secondary-color;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        @include fadeIn;
+
+        .holder{
+            padding:20px;
+            font-size: 2rem; 
+            text-align: center;
+
+        }
+    }
+}
+
+.jobInfo{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+
+    span{
+        color: $text-color;
+        font-weight: 900;
+    }
+}
+
+.myproj{
+
+    div {
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        a{
+            display: block;
+            background-color:$primary-color ;
+            color: $secondary-color;
+            padding: 5px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.sticky{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+} 
+
+footer{
+    width: 100%;
+    color: $secondary-color;
+    text-align: center;
+    padding: 5px;
+    z-index: 3;
+    background-color: $primary-color;
+    opacity: 0.5;
+
+}
+
+@include mediaXl {
+
+    .menu-branding{
+        // background-color: violet;
+    }
+
+
+    .vh-holder{
+        // background-color: green;
+        margin-left: 10%;
+        right: 25%;
+    }
+
+}
+
+@include mediaLg1 {
+
+    .menu-branding .brandingnav{
+        left: 15%;
+    }
+
+    .menu-branding{
+        // background-color: gray;
     }
 
     .vh-holder{
-        position: absolute;
-        top: 20vh;
-        right: 20%;
-        z-index: -1;
-        margin-left: 20%;
-        border-radius: 5px;
-        background:rgba(248, 248, 248, 0.6);
-        @include fadeIn;
-        
-
-        .myinfo{ 
-            color: $primary-color;
-            padding: 15px;
-            font-weight: 400;
-            
-            span{
-                font-weight: 900;
-                color: $text-color;
-            }
-        }
-        
+        // background-color: pink;
+        top:16vh;
+        right: 5%;
     }
 
-    #about,#contactme {
-        z-index: -1;
-        .holder{
-            z-index: -1;
-            padding: 15px;
-            background-color: rgba($color: $primary-color, $alpha: 0.6);
-            border-radius: 5px;
-            color:$secondary-color;
-            font-weight: 400;
-            text-align: left;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            @include fadeIn;
-
-            .lg-header{
-                // color: $text-color;
-                font-size: 40px;
-                font-weight: 500;
-                margin-bottom: 15px;
-
-            }
-
-            .info {
-                ul{
-                    margin-top: 10px;
-                    display: inline-block;
-                    list-style: none;
-                    text-align: left;
-                    padding: 0;
-                }
-            }
-
-            .photoHolder{
-                z-index: -1;
-                text-align: center;
-                img{
-                    border-radius: 50%;
-                    height: 150px;
-                    border:2px solid $secondary-color;
-                }
-            }
-
-            .skill-star{
-                ul{
-                    display: inline-block;
-                    list-style: none;
-                    
-                    span{
-                        display: block;
-                        margin-left:10px;
-                        padding: 5px 10px;
-                    }
-                }
-            }
-        }
-    }
-
-    #contactme{
-        
-
-        h1{
-            text-align: center;
-            color: $primary-color;
-        }
-
-        .container{
-            background-color: rgba($color: $secondary-color, $alpha: 0.6);
-            border-radius: 5px;
-            color:$secondary-color;
-            font-weight: 400;
-            text-align: left;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            width: 100%;
-            padding: 15px;
-            margin: auto;
-            @include fadeIn;
-
-            .holder{
-                padding:20px;
-                font-size: 2rem; 
-                text-align: center;
-
-            }
-        }
-    }
-
-    .jobInfo{
-        text-decoration: none;
-        list-style: none;
-        display: inline-block;
-
-        span{
-            color: $text-color;
-            font-weight: 900;
-        }
-    }
-
-    .myproj{
-
-        div {
-            padding-bottom: 15px;
-            padding-top: 15px;
-
-            a{
-                display: block;
-                background-color:$primary-color ;
-                color: $secondary-color;
-                padding: 5px 20px;
-                text-decoration: none;
-                text-align: center;
-            }
-        }
-        img{
-            width: 100%;
-        }
-    }
-
-    .sticky{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-    } 
-
-    footer{
-        width: 100%;
-        color: $secondary-color;
-        text-align: center;
-        padding: 5px;
-        z-index: 3;
-        background-color: $primary-color;
-        opacity: 0.5;
-   
-    }
 }
+
+@include mediaLg {
+
+    .menu-branding .brandingnav .navlink{
+        font-size:25px;
+    }
+
+    .menu-branding .brandingnav{
+        left: 10%;
+    }
+
+    .menu-branding{
+        // background-color: orange;
+    }
+
+    .vh-holder{
+        // background-color: yellow;
+    }
+
+}
+
+@include mediaMd {
+
+    .menu-branding .brandingnav{
+        left: 5%;
+    }
+
+    .menu-branding{
+        // background-color: aqua;
+    }
+
+    .brandname {
+        position: relative;
+        top: 10vh;
+        left: 15vh;
+    }
+
+    .vh-holder{
+        // background-color: blue;
+        position: relative;
+        top: 25%;
+        right: 0;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+}
+
+@include mediaSm1 {
+
+    .menu-branding{
+        // background-color: brown;
+    }
+
+    .vh-holder{
+        // background-color: yellow;
+    }
+
+    .menu-branding{
+        width: 100%;
+        height: 45vh;
+        transform: translate3d(0, -300%, 0);
+
+        &.show{
+            transform: translate3d(0, -125%, 0);
+            
+        }
+
+        .brandingnav{
+            top:18%;
+            left: 22%;
+        }
+
+        .arrow1{
+            position: relative;
+            width: 100%;
+            top: 45vh;
+            border-bottom: 0px solid;
+            border-right: 35vh solid transparent;
+            border-left: 35vh solid transparent;
+            border-top: 50px solid $primary-color;
+            left:0;
+
+            &:after{
+                content: '';
+                border-top: 0px solid;
+                border-left: 0px solid;
+                left: 0;
+                top: 0;
+            }
+            
+
+            .logo {
+                position: absolute;
+                top: -220px;
+                left: -15%;
+                height: 400px;
+
+               
+
+                img{
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    height: 60%;
+                }
+            }
+        }
+    }
+
+    .menu-nav{
+        width: 100%;
+        height: 55vh;
+        transform: translate3d(0, 300%, 0);
+
+        &.show{
+            transform: translate3d(0, 75%, 0);
+        }
+    }
+
+}
+
+@include mediaSm2 {
+
+    .menu-branding{
+        // background-color: aqua;
+    }
+
+    .vh-holder{
+        // background-color: magenta;
+    }
+
+    .menu-branding{
+        width: 100%;
+        height: 45vh;
+        transform: translate3d(0, -300%, 0);
+
+        .brandingnav{
+            left: 20%;
+        }
+
+        &.show{
+            transform: translate3d(0, -125%, 0);
+            
+        }
+
+        .arrow1{
+            position: relative;
+            width: 100%;
+            top: 45vh;
+            border-bottom: 0px solid;
+            border-right: 32vh solid transparent;
+            border-left: 32vh solid transparent;
+            border-top: 50px solid $primary-color;
+            left:0;
+
+            &:after{
+                content: '';
+                border-top: 0px solid;
+                border-left: 0px solid;
+                left: 0;
+                top: 0;
+            }
+            
+
+            .logo {
+                // position: fixed;
+                left: -10vw;
+                // height: 100%;
+                // z-index: 2;
+
+               
+
+            //     img{
+            //         position: absolute;
+            //         margin: auto;
+            //         top: 0;
+            //         right: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         height: 40%;
+            //     }
+            }
+        }
+    }
+
+}
+
+@include mediaSm {
+
+    .menu-branding{
+        // background-color: purple;
+    }
+
+    .vh-holder{
+        // background-color: red;
+    }
+
+    .menu-branding{
+        width: 100%;
+        height: 45vh;
+        transform: translate3d(0, -300%, 0);
+
+        &.show{
+            transform: translate3d(0, -125%, 0);
+            
+        }
+
+        .arrow1{
+            position: relative;
+            width: 100%;
+            top: 45vh;
+            border-bottom: 0px solid;
+            border-right: 25vh solid transparent;
+            border-left: 25vh solid transparent;
+            border-top: 50px solid $primary-color;
+            left:0;
+
+            &:after{
+                content: '';
+                border-top: 0px solid;
+                border-left: 0px solid;
+                left: 0;
+                top: 0;
+            }
+            
+
+            .logo {
+                position: absolute;
+                left: -5vw;
+                top: -30vh;
+                height: 400px;
+                z-index: 2;
+
+               
+
+                img{
+                    // position: absolute;
+                    // margin: auto;
+                    // top: 0;
+                    // right: 0;
+                    // bottom: 0;
+                    // left: 0;
+                    // height: 40%;
+                }
+            }
+        }
+    }
+
+}
+
+@include mediaXs {
+
+    .menu-branding{
+        // background-color: gray;
+    }
+
+    .vh-holder{
+        // background-color: lightblue;
+    }
+
+    .menu-branding{
+        width: 100%;
+        height: 45vh;
+        transform: translate3d(0, -300%, 0);
+
+        &.show{
+            transform: translate3d(0, -125%, 0);
+            
+        }
+
+        .brandingnav{
+            left:10%;
+
+            .navlink{
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+        }
+
+        .arrow1{
+            position: relative;
+            width: 100%;
+            top: 45vh;
+            border-bottom: 0px solid;
+            border-right: 20vh solid transparent;
+            border-left: 20vh solid transparent;
+            border-top: 50px solid $primary-color;
+            left:0;
+
+            &:after{
+                content: '';
+                border-top: 0px solid;
+                border-left: 0px solid;
+                left: 0;
+                top: 0;
+            }
+            
+
+            .logo {
+                position: absolute;
+                left: 2vw;
+                top: -25vh;
+                height: 250px;
+                z-index: 2;
+
+               
+
+                img{
+                    // position: absolute;
+                    // margin: auto;
+                    // top: 0;
+                    // right: 0;
+                    // bottom: 0;
+                    // left: 0;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -47,32 +47,52 @@ $image-name:url('../img/namechamz.jpg');
     to   { opacity: 1; }
 }
 
+@mixin mediaXs {
+    @media screen and (max-width: 455px) {
+        @content; 
+    }
+}
+
 @mixin mediaSm {
-    @media only screen and (max-width: 500px){ 
-        @content;
+    @media screen and (max-width: 500px) {
+        @content; 
+    }
+}
+
+@mixin mediaSm1 {
+    @media screen and (max-width: 631px) {
+        @content; 
+    }
+}
+
+@mixin mediaSm2 {
+    @media screen and (max-width: 558px) {
+        @content; 
     }
 }
 
 @mixin mediaMd {
-    @media only screen and (max-width: 768px){ 
-        @content;
+    @media screen and (max-width: 768px) {
+        @content; 
     }
 }
 
 @mixin mediaLg {
-    @media only screen and (max-width: 769px){ 
-        @content;
+    @media screen and (max-width: 900px) {
+        @content; 
+    }
+}
+
+
+@mixin mediaLg1 {
+    @media screen and (max-width: 1047px) {
+        @content; 
     }
 }
 
 @mixin mediaXl {
-    @media only screen and (max-width: 1171px){ 
-        @content;
+    @media screen and (max-width: 1200px) {
+        @content; 
     }
 }
 
-@mixin mediaXlr {
-    @media only screen and (max-width: 1250px) { 
-        @content;
-    }
-}
