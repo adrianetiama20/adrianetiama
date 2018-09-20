@@ -127,10 +127,14 @@
                 }
 
 
-                &:hover{
+                &:hover {
                     border-left: 10px solid $text-color;
                 }
                 
+            }
+
+            .current{
+                border-left: 10px solid $text-color;
             }
     
         }
@@ -142,7 +146,7 @@
         .arrow1{
             position: relative;
             width:5px;
-            left: -125px;
+            left: -124px;
             border-bottom: 50vh solid $primary-color;
             border-left: 125px solid transparent;
 
@@ -151,7 +155,7 @@
                 width:5px;
                 height: 50%;
                 position: absolute;
-                left: -125px;
+                left: -124px;
                 top:50vh;
                 border-top: 50vh solid $primary-color;
                 border-left: 125px solid transparent;
