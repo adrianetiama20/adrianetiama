@@ -15,6 +15,7 @@ function toggleMenu() {
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
         navitem.forEach(items => items.classList.add("show"));
+        $('body').css('overflow', 'hidden');
 
         showMenu = true;
     } else {
@@ -24,6 +25,7 @@ function toggleMenu() {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         navitem.forEach(items => items.classList.remove('show'));
+        $('body').css('overflow', 'auto');
 
         showMenu = false;
 
