@@ -110,7 +110,7 @@
     float: left;
     list-style: none;
     transform: translate3d(-100%, 0, 0);
-    width: 55%;
+    width: 50%;
     transition: all 0.5s ease-out; }
     .menu-nav .overlay {
       background-color: #F8F8F8;
@@ -123,22 +123,27 @@
       z-index: 1; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
+    .menu-nav .logo {
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+      .menu-nav .logo img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 340px;
+        z-index: 2; }
   .menu-branding {
     background-color: #1d1e22;
-    width: 45%;
+    width: 50%;
     position: relative;
     float: right;
     transform: translate3d(150%, 0, 0);
+    box-shadow: -12px -1px 20px 0px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-out; }
-    .menu-branding:after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      border-bottom: 50vh solid transparent;
-      border-right: 15vh solid #1d1e22;
-      border-left: 0px solid;
-      border-top: 50vh solid transparent;
-      left: -15vh; }
     .menu-branding .brandingnav {
       position: absolute;
       top: 35%;
@@ -175,19 +180,6 @@
         border-left: 10px solid #780d10; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .logo {
-      position: absolute;
-      left: -29%;
-      height: 100%;
-      z-index: 2; }
-      .menu-branding .logo img {
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 340px; }
 
 .navitem:nth-child(1) {
   transition-delay: 0.1s; }
@@ -225,10 +217,10 @@ body {
   margin-right: 0 !important; }
 
 .brandname {
-  position: absolute;
-  top: 30vh;
-  width: 70%;
-  height: 200px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 25vh;
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s;
@@ -239,14 +231,18 @@ body {
   /* Opera < 12.1 */
   animation: fadein 2s; }
   .brandname img {
-    width: 100%; }
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50%; }
 
 .vh-holder {
-  position: absolute;
-  top: 20vh;
-  right: 20%;
+  position: relative;
+  top: 25vh;
   z-index: -1;
-  margin-left: 20%;
   border-radius: 5px;
   background: rgba(248, 248, 248, 0.6);
   -webkit-animation: fadein 2s;
