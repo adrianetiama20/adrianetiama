@@ -481,68 +481,68 @@ footer{
     }
 }
 
-// @include gs3-portrait {
-//     .vh-holder{
-//         // background-color: blue;
+@include gs3-portrait {
+    .vh-holder{
+        // background-color: blue;
 
-//         .myinfo{
-//             font-size: 15px;
-//             padding:5px;
-//             text-align: justify;
+        .myinfo{
+            font-size: 15px;
+            padding:5px;
+            text-align: justify;
 
-//             h2{
-//                 text-align: center;
-//                 font-size: 25px;
-//                 padding-bottom: 5px;
-//             }
-//         }
-//     }
+            h2{
+                text-align: center;
+                font-size: 25px;
+                padding-bottom: 5px;
+            }
+        }
+    }
 
-//     .brandname{
-//         img{
-//             padding-bottom: 20%;
-//         }
-//     }
+    .brandname{
+        img{
+            padding-bottom: 20%;
+        }
+    }
 
-//     .menu-branding .arrow1{
-//         position: relative;
-//         width: 100%;
-//         top: 256px;
-//         border-bottom: 0px solid;
-//         border-right: 27vh solid transparent;
-//         border-left: 28vh solid transparent;
-//         border-top: 46px solid #1d1e22;
-//         left: 0;
+    .menu-branding .arrow1{
+        position: relative;
+        width: 100%;
+        top: 256px;
+        border-bottom: 0px solid;
+        border-right: 27vh solid transparent;
+        border-left: 28vh solid transparent;
+        border-top: 46px solid #1d1e22;
+        left: 0;
 
-//         &:after {
-//             content: none;
-//         }
+        &:after {
+            content: none;
+        }
 
-//         .logo{
-//             position: fixed;
-//             top: 27vh;
-//             left: 14vh;
-//             height: 100%;
-//             z-index: 5;
+        .logo{
+            position: fixed;
+            top: 27vh;
+            left: 14vh;
+            height: 100%;
+            z-index: 5;
 
-//             img{
-//                 height: 200px;
-//             }
-//         }
-//     }
+            img{
+                height: 200px;
+            }
+        }
+    }
 
-//     .menu-branding .brandingnav{
-//         top: 27%;
-//         left: 15px;
+    .menu-branding .brandingnav{
+        top: 27%;
+        left: 15px;
 
-//         .navlink{
-//             font-size: 21px;
-//             padding-left: 10px;
-//             margin-bottom: 0;
-//             letter-spacing: 1px;
-//         }
-//     }
-// }
+        .navlink{
+            font-size: 21px;
+            padding-left: 10px;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+        }
+    }
+}
 
 /* Samsung Galaxy S4 ----------- */
 @include gs4-landscape {
@@ -687,7 +687,7 @@ iPad 3
 
     .menu-branding{
         width: 100%;
-        height: 45vh;
+        height: 50vh;
         transform: translate3d(0, -300%, 0);
 
         &.show{
@@ -698,7 +698,7 @@ iPad 3
 
     .menu-nav{
         width: 100%;
-        height: 55vh;
+        height: 50vh;
         transform: translate3d(0, 300%, 0);
 
         &.show{

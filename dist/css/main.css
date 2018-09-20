@@ -559,6 +559,45 @@ footer {
   #about .holder .lg-header, #contactme .holder .lg-header {
     text-align: center; } }
 
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder .myinfo {
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify; }
+    .vh-holder .myinfo h2 {
+      text-align: center;
+      font-size: 25px;
+      padding-bottom: 5px; }
+  .brandname img {
+    padding-bottom: 20%; }
+  .menu-branding .arrow1 {
+    position: relative;
+    width: 100%;
+    top: 256px;
+    border-bottom: 0px solid;
+    border-right: 27vh solid transparent;
+    border-left: 28vh solid transparent;
+    border-top: 46px solid #1d1e22;
+    left: 0; }
+    .menu-branding .arrow1:after {
+      content: none; }
+    .menu-branding .arrow1 .logo {
+      position: fixed;
+      top: 27vh;
+      left: 14vh;
+      height: 100%;
+      z-index: 5; }
+      .menu-branding .arrow1 .logo img {
+        height: 200px; }
+  .menu-branding .brandingnav {
+    top: 27%;
+    left: 15px; }
+    .menu-branding .brandingnav .navlink {
+      font-size: 21px;
+      padding-left: 10px;
+      margin-bottom: 0;
+      letter-spacing: 1px; } }
+
 /* Samsung Galaxy S4 ----------- */
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
@@ -626,13 +665,13 @@ iPad 3
     margin-top: 100px; }
   .menu-branding {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     transform: translate3d(0, -300%, 0); }
     .menu-branding.show {
       transform: translate3d(0, -125%, 0); }
   .menu-nav {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     transform: translate3d(0, 300%, 0); }
     .menu-nav.show {
       transform: translate3d(0, 75%, 0); }
