@@ -203,14 +203,14 @@ footer{
 /* Smartphones (portrait and landscape) ----------- */
 @include smartphone {
     .vh-holder{
-        // background-color: dimgray;
+        background-color: dimgray;
     }
 }
 
 /* Smartphones (landscape) ----------- */
 @include smartphone-landscape {
     .vh-holder{
-        // background-color: darkkhaki;
+        background-color: darkkhaki;
     }
 }
 
@@ -218,20 +218,20 @@ footer{
 /* Smartphones (portrait) ----------- */
 @include smartphone-portait {
     .vh-holder{
-        // background-color: darkcyan;
+        background-color: darkcyan;
     }
 }
 
 /* iPhone 4 ----------- */
 @include ip4-landscape {
     .vh-holder{
-        // background-color: gray;
+        background-color: gray;
     }
 }
 
 @include ip4-portrait {
     .vh-holder{
-        // background-color: pink;
+        background-color: pink;
         position: unset; 
         z-index: -1;
         margin-left: 0px;
@@ -351,26 +351,26 @@ footer{
 /* iPhone 5 ----------- */
 @include ip5-landscape {
     .vh-holder{
-        // background-color: magenta;
+        background-color: magenta;
     }
 }
 
 @include ip5-portrait {
     .vh-holder{
-        // background-color: aqua;
+        background-color: aqua;
     }
 }
 
 /* iPhone 6 ----------- */
 @include ip6-landscape {
     .vh-holder{
-        // background-color: teal;
+        background-color: teal;
     }
 }
 
 @include ip6-portrait {
     .vh-holder{
-        // background-color: brown;
+        background-color: brown;
         font-size: 13px;
     }
 
@@ -415,20 +415,20 @@ footer{
 /* iPhone 6+ ----------- */
 @include ip6plus-landscape {
     .vh-holder{
-        // background-color: maroon;
+        background-color: maroon;
     }
 }
 
 @include ip6plus-portrait {
     .vh-holder{
-        // background-color: violet;
+        background-color: violet;
     }
 }
 
 /* Samsung Galaxy S3 ----------- */
 @include gs3-landscape {
     .vh-holder{
-        // background-color: indigo;
+        background-color: indigo;
         top: 2vh;
         right: 50%;
         font-size: 14px;
@@ -483,7 +483,7 @@ footer{
 
 @include gs3-portrait {
     .vh-holder{
-        // background-color: blue;
+        background-color: blue;
 
         .myinfo{
             font-size: 15px;
@@ -547,20 +547,20 @@ footer{
 /* Samsung Galaxy S4 ----------- */
 @include gs4-landscape {
     .vh-holder{
-        // background-color: green;
+        background-color: green;
     }
 }
 
 @include gs4-portrait {
     .vh-holder{
-        // background-color: yellow;
+        background-color: yellow;
     }
 }
 
 /* Samsung Galaxy S5 ----------- */
 @include gs5-landscape {
     .vh-holder{
-        // background-color: orange;
+        background-color: orange;
         top: 2vh;
         right: 50%;
         font-size: 14px;
@@ -614,28 +614,28 @@ footer{
 
 @include gs5-portrait {
     .vh-holder{
-        // background-color: red;
+        background-color: red;
     }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @include ipad {
     .vh-holder{
-        // background-color: navy;
+        background-color: navy;
     }
 }
     
 /* iPads (landscape) ----------- */
 @include ipad-landscape {
     .vh-holder{
-        // background-color: lightgreen;
+        background-color: lightgreen;
     }
 }
     
 /* iPads (portrait) ----------- */
 @include ipad-portrait {
     .vh-holder{
-        // background-color: lightseagreen;
+        background-color: lightseagreen;
     }
 }
 
@@ -645,7 +645,7 @@ iPad 3
 
 @include ipad3-landscape {
     .vh-holder{
-        // background-color: lightcoral;
+        background-color: lightcoral;
         right: 5%;
         margin-left: 15%;
     }
@@ -666,7 +666,7 @@ iPad 3
 
 @include ipad3-portrait {
     .vh-holder{
-        // background-color: lightblue;
+        background-color: lightblue;
         position: unset; 
         z-index: -1;
         margin-left: 0px;
@@ -754,14 +754,14 @@ iPad 3
 /* Large screens ----------- */
 @include largeScreen {
     .vh-holder{
-        // background-color: yellowgreen;
+        background-color: yellowgreen;
     }
 }
 
 /* Desktops and laptops ----------- */
 @include bigScreen {
     .vh-holder{
-        // background-color: wheat;
+        background-color: wheat;
     }
 }
 

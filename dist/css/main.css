@@ -419,11 +419,28 @@ footer {
   opacity: 0.5; }
 
 /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .vh-holder {
+    background-color: dimgray; } }
+
 /* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  .vh-holder {
+    background-color: darkkhaki; } }
+
 /* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .vh-holder {
+    background-color: darkcyan; } }
+
 /* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: gray; } }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .vh-holder {
+    background-color: pink;
     position: unset;
     z-index: -1;
     margin-left: 0px;
@@ -497,9 +514,22 @@ footer {
       margin-bottom: 0px; } }
 
 /* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: magenta; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: aqua; } }
+
 /* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: teal; } }
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .vh-holder {
+    background-color: brown;
     font-size: 13px; }
   .menu-branding .arrow1 {
     position: relative;
@@ -526,9 +556,18 @@ footer {
       margin-bottom: 0px; } }
 
 /* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: maroon; } }
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .vh-holder {
+    background-color: violet; } }
+
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .vh-holder {
+    background-color: indigo;
     top: 2vh;
     right: 50%;
     font-size: 14px;
@@ -560,14 +599,16 @@ footer {
     text-align: center; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder .myinfo {
-    font-size: 15px;
-    padding: 5px;
-    text-align: justify; }
-    .vh-holder .myinfo h2 {
-      text-align: center;
-      font-size: 25px;
-      padding-bottom: 5px; }
+  .vh-holder {
+    background-color: blue; }
+    .vh-holder .myinfo {
+      font-size: 15px;
+      padding: 5px;
+      text-align: justify; }
+      .vh-holder .myinfo h2 {
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 5px; }
   .brandname img {
     padding-bottom: 20%; }
   .menu-branding .arrow1 {
@@ -599,9 +640,18 @@ footer {
       letter-spacing: 1px; } }
 
 /* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .vh-holder {
+    background-color: green; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .vh-holder {
+    background-color: yellow; } }
+
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .vh-holder {
+    background-color: orange;
     top: 2vh;
     right: 50%;
     font-size: 14px;
@@ -631,14 +681,31 @@ footer {
   #about .holder .lg-header, #contactme .holder .lg-header {
     text-align: center; } }
 
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .vh-holder {
+    background-color: red; } }
+
 /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .vh-holder {
+    background-color: navy; } }
+
 /* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .vh-holder {
+    background-color: lightgreen; } }
+
 /* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .vh-holder {
+    background-color: lightseagreen; } }
+
 /**********
 iPad 3
 **********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .vh-holder {
+    background-color: lightcoral;
     right: 5%;
     margin-left: 15%; }
   .menu-branding .brandingnav {
@@ -651,6 +718,7 @@ iPad 3
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .vh-holder {
+    background-color: lightblue;
     position: unset;
     z-index: -1;
     margin-left: 0px;
@@ -707,4 +775,11 @@ iPad 3
     bottom: 0 !important; } }
 
 /* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .vh-holder {
+    background-color: yellowgreen; } }
+
 /* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .vh-holder {
+    background-color: wheat; } }
