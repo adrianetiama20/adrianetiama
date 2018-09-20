@@ -32,24 +32,6 @@
   to {
     opacity: 1; } }
 
-/* Smartphones (portrait and landscape) ----------- */
-/* Smartphones (landscape) ----------- */
-/* Smartphones (portrait) ----------- */
-/* iPads (portrait and landscape) ----------- */
-/* iPads (landscape) ----------- */
-/* iPads (portrait) ----------- */
-/**********
-iPad 3
-**********/
-/* Desktops and laptops ----------- */
-/* Large screens ----------- */
-/* iPhone 4 ----------- */
-/* iPhone 5 ----------- */
-/* iPhone 6 ----------- */
-/* iPhone 6+ ----------- */
-/* Samsung Galaxy S3 ----------- */
-/* Samsung Galaxy S4 ----------- */
-/* Samsung Galaxy S5 ----------- */
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -84,24 +66,6 @@ iPad 3
   to {
     opacity: 1; } }
 
-/* Smartphones (portrait and landscape) ----------- */
-/* Smartphones (landscape) ----------- */
-/* Smartphones (portrait) ----------- */
-/* iPads (portrait and landscape) ----------- */
-/* iPads (landscape) ----------- */
-/* iPads (portrait) ----------- */
-/**********
-iPad 3
-**********/
-/* Desktops and laptops ----------- */
-/* Large screens ----------- */
-/* iPhone 4 ----------- */
-/* iPhone 5 ----------- */
-/* iPhone 6 ----------- */
-/* iPhone 6+ ----------- */
-/* Samsung Galaxy S3 ----------- */
-/* Samsung Galaxy S4 ----------- */
-/* Samsung Galaxy S5 ----------- */
 .menu-btn {
   position: fixed;
   z-index: 3;
@@ -162,9 +126,19 @@ iPad 3
   .menu-branding {
     background-color: #1d1e22;
     width: 45%;
+    position: relative;
     float: right;
     transform: translate3d(150%, 0, 0);
     transition: all 0.5s ease-out; }
+    .menu-branding:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      border-bottom: 50vh solid transparent;
+      border-right: 15vh solid #1d1e22;
+      border-left: 0px solid;
+      border-top: 50vh solid transparent;
+      left: -118px; }
     .menu-branding .brandingnav {
       position: absolute;
       top: 35%;
@@ -201,34 +175,19 @@ iPad 3
         border-left: 10px solid #780d10; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .arrow1 {
-      position: relative;
-      width: 5px;
-      left: -124px;
-      border-bottom: 50vh solid #1d1e22;
-      border-left: 125px solid transparent; }
-      .menu-branding .arrow1:after {
-        content: '';
-        width: 5px;
-        height: 50%;
+    .menu-branding .logo {
+      position: absolute;
+      left: -29%;
+      height: 100%;
+      z-index: 2; }
+      .menu-branding .logo img {
         position: absolute;
-        left: -124px;
-        top: 50vh;
-        border-top: 50vh solid #1d1e22;
-        border-left: 125px solid transparent; }
-      .menu-branding .arrow1 .logo {
-        position: fixed;
-        left: -26vh;
-        height: 100%;
-        z-index: 2; }
-        .menu-branding .arrow1 .logo img {
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          height: 40%; }
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 340px; }
 
 .navitem:nth-child(1) {
   transition-delay: 0.1s; }
@@ -417,369 +376,3 @@ footer {
   z-index: 3;
   background-color: #1d1e22;
   opacity: 0.5; }
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .vh-holder {
-    background-color: dimgray; } }
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  .vh-holder {
-    background-color: darkkhaki; } }
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  .vh-holder {
-    background-color: darkcyan; } }
-
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: gray; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: pink;
-    position: unset;
-    z-index: -1;
-    margin-left: 0px;
-    padding: 15px 20px;
-    font-size: 15px; }
-  .brandname {
-    position: absolute;
-    top: 0;
-    left: 5vh;
-    width: 85%;
-    height: 0px; }
-  .mtop {
-    margin-top: 75px; }
-  .jobInfo {
-    font-weight: 900; }
-  .skill-star {
-    text-align: center; }
-    .skill-star ul {
-      padding-left: 0px;
-      letter-spacing: 3px; }
-      .skill-star ul li {
-        padding-top: 10px; }
-  .menu-branding {
-    width: 100%;
-    height: 45vh;
-    transform: translate3d(0, -300%, 0); }
-    .menu-branding.show {
-      transform: translate3d(0, -125%, 0); }
-  .menu-nav {
-    width: 100%;
-    height: 55vh;
-    transform: translate3d(0, 300%, 0); }
-    .menu-nav.show {
-      transform: translate3d(0, 75%, 0); }
-  .menu-branding .arrow1 {
-    position: relative;
-    width: 100%;
-    top: 330px;
-    border-bottom: 0px solid;
-    border-right: 29vh solid transparent;
-    border-left: 29vh solid transparent;
-    border-top: 46px solid #1d1e22;
-    left: 0; }
-    .menu-branding .arrow1:after {
-      content: none; }
-    .menu-branding .arrow1 .logo {
-      position: fixed;
-      top: 27vh;
-      left: 15vh;
-      height: 100%;
-      z-index: 5; }
-      .menu-branding .arrow1 .logo img {
-        height: 240px; }
-  .menu-branding .brandingnav {
-    top: 25%;
-    left: 10%; }
-    .menu-branding .brandingnav .navlink {
-      font-size: 25px;
-      padding-left: 10px;
-      margin-bottom: 8px;
-      letter-spacing: 3px; }
-  .break-md {
-    flex: 0 0 100% !important;
-    max-width: 100% !important; }
-  #about .holder .lg-header, #contactme .holder .lg-header {
-    font-size: 30px;
-    text-align: center; }
-  #contactme .container .holder {
-    font-size: 20px; }
-    #contactme .container .holder .lg-header {
-      margin-bottom: 0px; } }
-
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: magenta; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: aqua; } }
-
-/* iPhone 6 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: teal; } }
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: brown;
-    font-size: 13px; }
-  .menu-branding .arrow1 {
-    position: relative;
-    width: 100%;
-    top: 279px;
-    border-bottom: 0px solid;
-    border-right: 28vh solid transparent;
-    border-left: 28vh solid transparent;
-    border-top: 46px solid #1d1e22;
-    left: 0; }
-    .menu-branding .arrow1:after {
-      content: none; }
-    .menu-branding .arrow1 .logo {
-      position: fixed;
-      top: 27vh;
-      left: 20vh;
-      height: 100%;
-      z-index: 5; }
-      .menu-branding .arrow1 .logo img {
-        height: 240px; }
-  .menu-branding .brandingnav {
-    left: 5%; }
-    .menu-branding .brandingnav .navlink {
-      margin-bottom: 0px; } }
-
-/* iPhone 6+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: maroon; } }
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: violet; } }
-
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: indigo;
-    top: 2vh;
-    right: 50%;
-    font-size: 14px;
-    margin-left: 25px;
-    margin-bottom: 45px;
-    text-align: justify; }
-  .brandname {
-    position: fixed;
-    top: 30vh;
-    right: 0;
-    width: 50%; }
-  .menu-branding .arrow1 .logo {
-    left: -39vh; }
-    .menu-branding .arrow1 .logo img {
-      height: 220px; }
-  .menu-branding .brandingnav {
-    top: 27%;
-    left: 5px; }
-    .menu-branding .brandingnav .navlink {
-      font-size: 24px; }
-  .skill-star {
-    text-align: center; }
-    .skill-star ul {
-      padding-left: 0px;
-      letter-spacing: 3px; }
-      .skill-star ul li {
-        padding-top: 10px; }
-  #about .holder .lg-header, #contactme .holder .lg-header {
-    text-align: center; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: blue; }
-    .vh-holder .myinfo {
-      font-size: 15px;
-      padding: 5px;
-      text-align: justify; }
-      .vh-holder .myinfo h2 {
-        text-align: center;
-        font-size: 25px;
-        padding-bottom: 5px; }
-  .brandname img {
-    padding-bottom: 20%; }
-  .menu-branding .arrow1 {
-    position: relative;
-    width: 100%;
-    top: 256px;
-    border-bottom: 0px solid;
-    border-right: 27vh solid transparent;
-    border-left: 28vh solid transparent;
-    border-top: 46px solid #1d1e22;
-    left: 0; }
-    .menu-branding .arrow1:after {
-      content: none; }
-    .menu-branding .arrow1 .logo {
-      position: fixed;
-      top: 27vh;
-      left: 14vh;
-      height: 100%;
-      z-index: 5; }
-      .menu-branding .arrow1 .logo img {
-        height: 200px; }
-  .menu-branding .brandingnav {
-    top: 27%;
-    left: 15px; }
-    .menu-branding .brandingnav .navlink {
-      font-size: 21px;
-      padding-left: 10px;
-      margin-bottom: 0;
-      letter-spacing: 1px; } }
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .vh-holder {
-    background-color: green; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .vh-holder {
-    background-color: yellow; } }
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .vh-holder {
-    background-color: orange;
-    top: 2vh;
-    right: 50%;
-    font-size: 14px;
-    margin-left: 25px;
-    margin-bottom: 45px; }
-  .brandname {
-    position: fixed;
-    top: 30vh;
-    right: 0;
-    width: 50%; }
-  .menu-branding .arrow1 .logo {
-    left: -40vh; }
-    .menu-branding .arrow1 .logo img {
-      height: 220px; }
-  .menu-branding .brandingnav {
-    top: 27%;
-    left: 5px; }
-    .menu-branding .brandingnav .navlink {
-      font-size: 24px; }
-  .skill-star {
-    text-align: center; }
-    .skill-star ul {
-      padding-left: 0px;
-      letter-spacing: 3px; }
-      .skill-star ul li {
-        padding-top: 10px; }
-  #about .holder .lg-header, #contactme .holder .lg-header {
-    text-align: center; } }
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .vh-holder {
-    background-color: red; } }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .vh-holder {
-    background-color: navy; } }
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .vh-holder {
-    background-color: lightgreen; } }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .vh-holder {
-    background-color: lightseagreen; } }
-
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: lightcoral;
-    right: 5%;
-    margin-left: 15%; }
-  .menu-branding .brandingnav {
-    left: 10%; }
-  .brandname {
-    top: 35vh;
-    width: 90%; }
-  .workInfo, .jobInfo {
-    font-size: 18px; } }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .vh-holder {
-    background-color: lightblue;
-    position: unset;
-    z-index: -1;
-    margin-left: 0px;
-    padding: 15px 50px;
-    font-size: 24px; }
-  .brandname {
-    position: absolute;
-    top: 0;
-    left: 8vh;
-    width: 80%; }
-  .mtop {
-    margin-top: 100px; }
-  .menu-branding {
-    width: 100%;
-    height: 50vh;
-    transform: translate3d(0, -300%, 0); }
-    .menu-branding.show {
-      transform: translate3d(0, -125%, 0); }
-  .menu-nav {
-    width: 100%;
-    height: 50vh;
-    transform: translate3d(0, 300%, 0); }
-    .menu-nav.show {
-      transform: translate3d(0, 75%, 0); }
-  .menu-branding .arrow1 {
-    position: relative;
-    width: 100%;
-    top: 460px;
-    border-bottom: 0px solid;
-    border-right: 30vh solid transparent;
-    border-left: 30vh solid transparent;
-    border-top: 100px solid #1d1e22;
-    left: 0; }
-    .menu-branding .arrow1:after {
-      content: none; }
-    .menu-branding .arrow1 .logo {
-      position: fixed;
-      top: 27vh;
-      left: 21vh;
-      height: 100%;
-      z-index: 5; }
-      .menu-branding .arrow1 .logo img {
-        height: 400px; }
-  .menu-branding .brandingnav {
-    top: 20%;
-    left: 20%;
-    letter-spacing: 10px; }
-  .break-md {
-    flex: 0 0 100% !important;
-    max-width: 100% !important; }
-  .fBout {
-    position: fixed !important;
-    left: 0 !important;
-    bottom: 0 !important; } }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  .vh-holder {
-    background-color: yellowgreen; } }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .vh-holder {
-    background-color: wheat; } }
