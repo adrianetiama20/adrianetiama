@@ -500,12 +500,11 @@ footer {
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .vh-holder {
-    background-color: brown;
     font-size: 13px; }
   .menu-branding .arrow1 {
     position: relative;
     width: 100%;
-    top: 300px;
+    top: 279px;
     border-bottom: 0px solid;
     border-right: 28vh solid transparent;
     border-left: 28vh solid transparent;
@@ -516,7 +515,7 @@ footer {
     .menu-branding .arrow1 .logo {
       position: fixed;
       top: 27vh;
-      left: 90px;
+      left: 20vh;
       height: 100%;
       z-index: 5; }
       .menu-branding .arrow1 .logo img {
