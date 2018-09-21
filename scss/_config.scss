@@ -46,3 +46,38 @@ $image-name:url('../img/namechamz.jpg');
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/* Custom, iPhone Retina */ 
+@mixin mnXs {
+    @media only screen and (min-width : 320px) {
+        @content;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@mixin mnSm {
+    @media only screen and (min-width : 480px) {
+        @content;
+    }
+}
+
+/* Small Devices, Tablets */
+@mixin mnMd {
+    @media only screen and (min-width : 768px) {
+        @content;
+    }
+}
+
+/* Medium Devices, Desktops */
+@mixin mnLg {
+    @media only screen and (min-width : 992px) {
+        @content;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@mixin mnXl {
+    @media only screen and (min-width : 1200px) {
+        @content;
+    }
+}
