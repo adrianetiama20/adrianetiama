@@ -151,7 +151,7 @@ body{
 
         .holder{
             padding:20px;
-            font-size: 2rem; 
+            font-size: 16px; 
             text-align: center;
 
         }
@@ -231,6 +231,7 @@ footer{
 
             .navlink{
                 margin-bottom: 5px;
+                font-size: 1.70rem;
             }
         }
     }
@@ -254,6 +255,15 @@ footer{
 
     .cover-container{
         margin-top: 15vh;
+        top: 10%;
+        left: 5%;
+    }
+
+    .menu-branding .brandingnav{
+        .navlink{
+            margin-bottom: 5px;
+            font-size: 1.70rem;
+        }
     }
 }
 
