@@ -34,6 +34,7 @@
 
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+/* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
@@ -72,6 +73,7 @@
     opacity: 1; } }
 
 /* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
@@ -397,6 +399,14 @@ footer {
     top: 20%;
     left: 10%; } }
 
+/* Small Devices, Tablets */
+@media screen and (max-width: 736px) {
+  .cover-container {
+    margin-top: 15vh; }
+  .menu-branding .brandingnav {
+    top: 20%;
+    left: 10%; } }
+
 @media screen and (max-width: 630px) {
   .menu-branding .brandingnav .navlink {
     margin-bottom: 5px;
@@ -448,6 +458,11 @@ footer {
     transform: translate3d(0, 300%, 0); }
     .menu-nav.show {
       transform: translate3d(0, 100%, 0); } }
+
+@media screen and (max-width: 414px) {
+  .menu-branding .brandingnav {
+    top: 20%;
+    left: 20%; } }
 
 @media screen and (max-width: 320px) {
   .cover-container {

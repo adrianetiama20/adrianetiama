@@ -55,6 +55,13 @@ $image-name:url('../img/namechamz.jpg');
 }
 
 /* Extra Small Devices, Phones */ 
+@mixin mnXs1 {
+    @media screen and (max-width : 414px) {
+        @content;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
 @mixin mnSm {
     @media screen and (max-width : 480px) {
         @content;
@@ -69,6 +76,12 @@ $image-name:url('../img/namechamz.jpg');
 
 @mixin mnMd1 {
     @media screen and (max-width : 728px) {
+        @content;
+    }
+}
+
+@mixin mnMd2 {
+    @media screen and (max-width : 736px) {
         @content;
     }
 }
