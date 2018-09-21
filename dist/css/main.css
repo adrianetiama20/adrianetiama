@@ -385,6 +385,22 @@ footer {
   opacity: 0.5; }
 
 /* Large Devices, Wide Screens */
+@media screen and (min-width: 1200px) {
+  .menu-branding {
+    width: 45%; }
+    .menu-branding:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      border-bottom: 50vh solid transparent;
+      border-right: 10vh solid #1d1e22;
+      border-left: 0px solid;
+      border-top: 50vh solid transparent;
+      left: -10vh; }
+  .menu-nav {
+    width: 55%; } }
+
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 @media screen and (max-width: 768px) {
